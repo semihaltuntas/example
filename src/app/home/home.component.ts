@@ -6,11 +6,11 @@ import { ActivatedRoute } from '@angular/router';
 import { SearchComponent } from "../search/search.component";
 import { FormsModule } from '@angular/forms';
 import { TagsComponent } from '../tags/tags.component';
-
+import { RouterModule } from '@angular/router';
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [CommonModule, SearchComponent, FormsModule, TagsComponent],  // TagsComponent zaten burada eklenmiş
+  imports: [CommonModule,RouterModule, SearchComponent, FormsModule, TagsComponent],  // TagsComponent zaten burada eklenmiş
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })
